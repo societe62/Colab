@@ -1,6 +1,6 @@
 # 코랩과제
 
-
+"source":[
 import functools
 import os
 
@@ -24,6 +24,7 @@ def crop_center(image):
   image = tf.image.crop_to_bounding_box(
       image, offset_y, offset_x, new_shape, new_shape)
   return image
+  ]
 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 @functools.lru_cache(maxsize=None)
 def load_image(image_url, image_size=(256, 256), preserve_aspect_ratio=True):
